@@ -111,8 +111,7 @@ img{
 	z-index: 2;
 }
 .ifshout-title{
-	margin-left: 406px;
-	
+	margin: 0 auto;
 }
 .ifshout-video{
 	position: relative;
@@ -530,7 +529,7 @@ img{
 	transform: rotate(180deg);
 	float: left;
 }
-.next 
+.next {
 	float: right;
 }
 

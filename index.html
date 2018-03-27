@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta http-equiv="content-type" content="text/html;charset=utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0">
-	<title>w</title>
+	<title>享无界 焕未来——2018金凤凰全球华人地产峰会</title>
 	<meta name="Keywords" content="">
 	<meta name="description" content="">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
@@ -430,18 +430,18 @@
 	<script type="text/javascript">
 		$(function(){
 			//凤凰图案变换
-			let imgs=['web/if0.png', 'web/if10.png', 'web/if20.png', 'web/if45.png', 'web/if60.png', 'web/if85.png',
+			var imgs=['web/if0.png', 'web/if10.png', 'web/if20.png', 'web/if45.png', 'web/if60.png', 'web/if85.png',
 					'web/if100.png', 'web/if85.png', 'web/if60.png', 'web/if45.png', 'web/if20.png', 'web/if10.png', 'web/if0.png'
 				];
-			let $ifeng=$('.ifeng');
-			let i=0,
+			var $ifeng=$('.ifeng');
+			var i=0,
 				cameraP = 1,
 				len=imgs.length;
-			let animationIfeng=function() {
+			var animationIfeng=function() {
 				++i;
-				let timer=setTimeout(function() {
+				var timer=setTimeout(function() {
 					$ifeng.attr('src', imgs[i]);
-					if(i==len-1) {
+					if(i===len-1) {
 						i=-1;
 					}
 					if(cameraP) {
@@ -452,20 +452,20 @@
 					}
 				},200);
 
-			}
+			};
 			animationIfeng();
 
 			//凤凰九鸣
 			// 卷轴动画
 			 $ifshout=$(".ifshout-video");
-			let j=0,
+			var j=0,
 				len2=8;
-			let animationScroll=function(){
+			var animationScroll=function(){
 				++j;
-				let timer=setTimeout(function(){
+				var timer=setTimeout(function(){
 					$ifshout.find('.ifshout-img'+(j-1)).hide();
 					$ifshout.find('.ifshout-img'+j).show();
-					if(j==len2-1){
+					if(j===len2-1){
 						clearTimeout(timer);
 						animationScroll=null;
 					}else{
@@ -473,13 +473,13 @@
 
 					}
 				},200);
-			}
+			};
 
 			$ifshout.find('.ifshout-img0').click(
 				function(){
 					animationScroll();
 
-				})
+				});
 			
 			// 选项卡
 			tabControl("click");
