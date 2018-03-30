@@ -95,6 +95,9 @@ img{
 	margin: 110px auto 0;
 	width: 90px;
 	animation: logoRotate 1s linear infinite;
+    -webkit-animation: logoRotate 1s linear infinite;
+    -moz-animation: logoRotate 1s linear infinite;
+    -ms-animation: logoRotate 1s linear infinite;
 }
 @keyframes logoRotate{
 	from{
@@ -103,6 +106,36 @@ img{
 	to{
 		transform: rotate(0deg);
 	}
+}
+@-webkit-keyframes logoRotate{
+
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+@-moz-keyframes logoRotate{
+
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
+}
+@-ms-keyframes logoRotate{
+
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+
 }
 /*凤鸣九州*/
 .ifshout{
